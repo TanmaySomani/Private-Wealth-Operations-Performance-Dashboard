@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+data/curated/*.building
+
+# Keep the earlier, unverified Power BI experiment local.
+powerbi/
+tests/test_powerbi_project.py
