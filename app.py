@@ -18,7 +18,7 @@ h1, h2, h3 {letter-spacing: -0.035em; color: #163a34;}
 [data-testid="stSidebar"] {background: #153c35;}
 [data-testid="stSidebar"] * {color: #f1f7f3;}
 [data-testid="stSidebar"] [data-testid="stSelectbox"] input, [data-testid="stSidebar"] [data-testid="stSelectbox"] button {color: #173b34 !important;}
-@media (max-width: 1600px) { [data-testid="stHorizontalBlock"] {flex-wrap: wrap;} [data-testid="stColumn"] {min-width: 165px !important;} }
+@media (max-width: 1600px) { [data-testid="stHorizontalBlock"] {flex-wrap: wrap;} [data-testid="stColumn"] {min-width: 200px !important;} }
 .eyebrow {font-size: 0.75rem; letter-spacing: 0.15em; font-weight: 700; color: #568071; text-transform: uppercase;}
 .note {background: #eaf2ec; border-left: 3px solid #6c9a79; border-radius: 5px; padding: 12px 16px; color: #294b40;}
 </style>''', unsafe_allow_html=True)
@@ -173,4 +173,4 @@ else:
     st.caption('The pipeline quarantines invalid rows; it does not silently correct source data. Resolve the issue in the upstream extract and rerun the load.')
     st.subheader('Latest successful load')
     show(loads[['snapshot_date','completed_at_utc','status']].rename(columns={'snapshot_date':'Business snapshot','completed_at_utc':'Loaded (UTC)','status':'Status'}))
-    st.caption('Only successful local rebuilds are recorded here. Scheduled refresh, service deployment, and failed-run monitoring are not implemented.')
+    st.caption('Only successful local data rebuilds are recorded here. Scheduled refresh and failed-run monitoring are not implemented.')

@@ -2,6 +2,8 @@
 
 A portfolio case study for a fictional Australian private wealth advisory firm. It turns fragmented service and finance extracts into an interactive **Streamlit** management dashboard, and a reproducible SQL reporting model. All names, figures, budgets, and events are synthetic. No claim is made about a real firm's data or requirements.
 
+**Live dashboard:** [wealth-operations-dashboard.streamlit.app](https://wealth-operations-dashboard.streamlit.app/)
+
 ## The business problem
 
 An operations manager receives separate client, adviser, service and finance spreadsheets. Inconsistent records make it hard to answer which client commitments are overdue, where workloads are building, and whether recorded fees match the finance ledger. Manual reconciliation slows reporting and makes it difficult to know whether management can trust the result.
